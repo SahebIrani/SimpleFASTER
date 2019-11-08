@@ -1,0 +1,19 @@
+@model IEnumerable<KeyValuePair<long, long>>
+
+@{
+      ViewData["Title"] = "Home Page";
+}
+
+
+<article class="card text-center">
+
+      <section class="card-body">
+            @foreach (KeyValuePair<long, long> item in Model)
+            {
+                  <ul class="list-group">
+                        <li class="list-group-item"></li>
+                  </ul>
+            }
+      </section>
+
+</article>

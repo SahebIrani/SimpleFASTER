@@ -1,0 +1,24 @@
+@model IEnumerable<KeyValuePair<long, long>>
+
+@{
+      ViewData["Title"] = "Home Page";
+}
+
+<article class="card text-center">
+
+      <section class="card-body bg-dark">
+            @foreach (KeyValuePair<long, long> item in Model)
+            {
+            <ul class="list-group">
+                  <li class="list-group-item list-group-item-action list-group-item-light">
+                        <span class="text-primary"> @item.Key </span>
+                        <span class="text-success"> @item.Value </span>
+                        <span class="font-weight-bold">key: @item.Key</span>
+                        and
+                        <span class="font-weight-bold"> output: @item.Value</span>
+                  </li>
+            </ul>
+            }
+      </section>
+
+</article>
